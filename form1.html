@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quick Data Entry of Modification for Savings Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .header div {
+            display: flex;
+            align-items: center;
+        }
+        .header div span {
+            margin-right: 10px;
+        }
+        .header div input {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .form-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .form-section .column {
+            width: 48%;
+        }
+        .form-section .column label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-section .column input,
+        .form-section .column select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .form-section .column .radio-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-section .column .radio-group label {
+            margin-right: 10px;
+        }
+        .form-section .column .radio-group input {
+            margin-right: 5px;
+        }
+        .document-section {
+            padding: 10px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .document-section h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .input-field {
+            padding: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .checkbox input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .checkbox label {
+            font-size: 14px;
+        }
+
+        .related-party {
+            padding: 20px 0;
+            border-top: 1px solid #ccc;
+        }
+        .related-party h3 {
+            margin-bottom: 10px;
+        }
+        .related-party .field-group {
+            margin-bottom: 20px;
+        }
+        .related-party .field-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .related-party .field-group input,
+        .related-party .field-group select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <span>User: 1015465</span>
+                <span>Time Zone: IST</span>
+            </div>
+            <div>
+                <span>Solution: FINCORE</span>
+                <input type="text" value="Opening of KVF/NSC accounts and Closure of KVF/NSC" readonly>
+            </div>
+        </div>
+        <h2>Quick Data Entry of Modification for Savings Account</h2>
+        <div class="form-section">
+            <div class="column">
+                <label for="accountName">A/c. Name*</label>
+                <input type="text" id="accountName" value="FAREED AHMAD">
+                
+                <label for="accountShortName">A/c. Short Name*</label>
+                <input type="text" id="accountShortName" value="FAREED AHM">
+                
+                <label for="interestRateCode">Interest Rate Code*</label>
+                <input type="text" id="interestRateCode" value="SBINT">
+                
+                <label>Cheque Allowed*</label>
+                <div class="radio-group">
+                    <input type="radio" id="chequeYes" name="chequeAllowed" value="Yes">
+                    <label for="chequeYes">Yes</label>
+                    <input type="radio" id="chequeNo" name="chequeAllowed" value="No">
+                    <label for="chequeNo">No</label>
+                </div>
+                
+                <label for="accountStatus">Account Status*</label>
+                <select id="accountStatus">
+                    <option value="Live">Live</option>
+                    <option value="Silent">Silent</option>
+                </select>
+                
+                <label for="accountDocumentsReceived">Account Documents Received*</label>
+                <select id="accountDocumentsReceived">
+                    <option value="N-NO">N-NO</option>
+                </select>
+                
+                <label for="kycRiskCategory">KYC Risk Category*</label>
+                <select id="kycRiskCategory">
+                    <option value="LOW">LOW</option>
+                </select>
+                
+                <label for="welfareSchemeCode">Welfare scheme code</label>
+                <input type="text" id="welfareSchemeCode">
+                
+                <label for="agentId">Agent Id</label>
+                <input type="text" id="agentId">
+                
+                <label for="branchOffice">Branch office</label>
+                <input type="text" id="branchOffice">
+                
+                <label for="revivalDate">Revival Date</label>
+                <input type="text" id="revivalDate">
+                
+                <label>Duplicate Passbook Issued</label>
+                <div class="radio-group">
+                    <input type="radio" id="duplicatePassbookYes" name="duplicatePassbookIssued" value="Yes">
+                    <label for="duplicatePassbookYes">Yes</label>
+                    <input type="radio" id="duplicatePassbookNo" name="duplicatePassbookIssued" value="No">
+                    <label for="duplicatePassbookNo">No</label>
+                </div>
+                
+                <label for="accountOpeningMode">Account Opening Mode*</label>
+                <select id="accountOpeningMode">
+                    <option value="N-NORMAL">N-NORMAL</option>
+                </select>
+                
+                <label for="jobId">Job Id/PPO No./Beneficiary Registration/Enrollment no</label>
+                <input type="text" id="jobId">
+                
+                <label for="form15G15H">Form 15G/15H submitted</label>
+                <div class="radio-group">
+                    <input type="radio" id="form15G15HYes" name="form15G15H" value="Yes">
+                    <label for="form15G15HYes">Yes</label>
+                    <input type="radio" id="form15G15HNo" name="form15G15H" value="No">
+                    <label for="form15G15HNo">No</label>
+                    <input type="radio" id="form15G15HDeath" name="form15G15H" value="Death">
+                    <label for="form15G15HDeath">Death</label>
+                </div>
+                
+                <label>Welfare Scheme beneficiary</label>
+                <div class="radio-group">
+                    <input type="radio" id="welfareSchemeYes" name="welfareScheme" value="Yes">
+                    <label for="welfareSchemeYes">Yes</label>
+                    <input type="radio" id="welfareSchemeNo" name="welfareScheme" value="No">
+                    <label for="welfareSchemeNo">No</label>
+                </div>
+                
+                <label for="freeCode5">Free Code 5</label>
+                <input type="text" id="freeCode5">
+                
+                <label for="rictUniqueNo">RICT Unique No.</label>
+                <input type="text" id="rictUniqueNo">
+            </div>
+            <div class="column">
+                <label for="accountOpeningDate">A/c. Opening Date*</label>
+                <input type="text" id="accountOpeningDate" value="18-12-2004">
+                
+                <label for="interestCreditAccount">Interest Credit A/c.*</label>
+                <select id="interestCreditAccount">
+                    <option value="9-Original A/c">9-Original A/c</option>
+                </select>
+                
+                <label for="nextInterestCalculationDate">Next Interest Calculation Date (Cr.)*</label>
+                <input type="text" id="nextInterestCalculationDate" value="31-03-2025">
+                
+                <label>ECS Enabled*</label>
+                <div class="radio-group">
+                    <input type="radio" id="ecsYes" name="ecsEnabled" value="Yes">
+                    <label for="ecsYes">Yes</label>
+                    <input type="radio" id="ecsNo" name="ecsEnabled" value="No">
+                    <label for="ecsNo">No</label>
+                </div>
+                
+                <label for="typeOfAccount">Type of Account*</label>
+                <input type="text" id="typeOfAccount" value="012">
+                
+                <label for="numberOfDocumentsReceived">Number of documents received*</label>
+                <input type="text" id="numberOfDocumentsReceived" value="N-NO">
+                
+                <label for="employeeId">Employee ID</label>
+                <input type="text" id="employeeId">
+                
+                <label for="bplCardNumber">BPL Card Number</label>
+                <input type="text" id="bplCardNumber">
+                
+                <label for="pensionPayorderExpiryDate">Pension Payorder Expiry Date</label>
+                <input type="text" id="pensionPayorderExpiryDate">
+                
+                <label for="reasonOfTransfer">Reason of transfer</label>
+                <input type="text" id="reasonOfTransfer" value="NEW ACCOUNT">
+                
+                <label for="duplicatePassbookIssueDate">Duplicate Passbook Issue Date</label>
+                <input type="text" id="duplicatePassbookIssueDate">
+                
+                <label for="dateOfWelcomeKitOpened">Date of Welcome Kit Opened*</label>
+                <input type="text" id="dateOfWelcomeKitOpened" value="28-08-2024">
+                
+                <label>Authorized</label>
+                <div class="radio-group">
+                    <input type="radio" id="authorizedYes" name="authorized" value="Yes">
+                    <label for="authorizedYes">Yes</label>
+                    <input type="radio" id="authorizedNo" name="authorized" value="No">
+                    <label for="authorizedNo">No</label>
+                </div>
+                
+                <label for="initialDepositAmount">Initial Deposit Amount</label>
+                <input type="text" id="initialDepositAmount">
+                
+                <label for="freeText7">Free Text 7</label>
+                <input type="text" id="freeText7">
+                
+                <label for="freeCode6">Free Code 6</label>
+                <input type="text" id="freeCode6">
+            </div>
+        </div>
+        <div class="document-section">
+            <h3>Document Details 1</h3>
+            <div class="form-group">
+                <label for="documentCode">Document Code*</label>
+                <input type="text" id="documentCode" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="scanDetails">Scan Details*</label>
+                <select id="scanDetails" class="input-field">
+                    <option>Select</option>
+                    <option>Aadhaar Card</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="documentDate">Document Date*</label>
+                <input type="date" id="documentDate" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="documentStatus">Document Status*</label>
+                <select id="documentStatus" class="input-field">
+                    <option>Select</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="del1">
+                <label for="del1">Del</label>
+            </div>
+        </div>
+        
+        <div class="document-section">
+            <h3>Document Details 2</h3>
+            <div class="form-group">
+                <label for="documentCode2">Document Code*</label>
+                <input type="text" id="documentCode2" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="scanDetails2">Scan Details*</label>
+                <select id="scanDetails2" class="input-field">
+                    <option>Select</option>
+                    <option>Aadhaar Card</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="documentDate2">Document Date*</label>
+                <input type="date" id="documentDate2" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="documentStatus2">Document Status*</label>
+                <select id="documentStatus2" class="input-field">
+                    <option>Select</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="del2">
+                <label for="del2">Del</label>
+            </div>
+        </div>
+        
+        
+        <div class="form-section">
+            <div class="column">
+                <h3>Related Party Details 1</h3>
+                <div class="field-group">
+                    <label for="relationshipType1">Relationship Type*</label>
+                    <select id="relationshipType1">
+                        <option value="M-Main">M-Main</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label for="cifId1">CIF ID*</label>
+                    <input type="text" id="cifId1" value="000719600">
+                </div>
+                <div class="field-group">
+                    <label for="name1">Name*</label>
+                    <input type="text" id="name1" value="FAREED AHMAD">
+                </div>
+                <div class="field-group">
+                    <label for="addressLine1">Address Line 1*</label>
+                    <input type="text" id="addressLine1" value="C 477, SHAHID INDRA JYOTI NAGAR">
+                </div>
+                <div class="field-group">
+                    <label for="city1">City</label>
+                    <input type="text" id="city1" value="JAIPU">
+                </div>
+                <div class="field-group">
+                    <label for="country1">Country</label>
+                    <input type="text" id="country1" value="IN">
+                </div>
+                <div class="field-group">
+                    <label for="phoneNo1">Phone No.</label>
+                    <input type="text" id="phoneNo1" value="8887976782">
+                </div>
+            </div>
+            <div class = "column">   
+                <h3>Relationship Code Details</h3>
+                <div class="field-group">
+                    <label for="relationshipCode1">Relationship Code</label>
+                    <input type="text" id="relationshipCode1" >
+                </div>
+                <div class="field-group">
+                    <label for="title1">Title*</label>
+                    <input type="text" id="title1" value="MR">
+                </div>
+                <div class="field-group">
+                    <label for="state1">State</label>
+                    <input type="text" id="state1" value="RAJAS">
+                </div>
+                <div class="field-group">
+                    <label for="postalCode1">Postal Code</label>
+                    <input type="text" id="postalCode1" value="302016">
+                </div>
+                <div class="field-group">
+                    <label for="del1">Del</label>
+                    <input type="checkbox" id="del1">
+                </div>               
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class = "column">    
+                <h3>Related Party Details 2</h3>
+                <div class="field-group">
+                    <label for="relationshipType2">Relationship Type*</label>
+                    <select id="relationshipType2">
+                        <option value="J-Joint Holder">J-Joint Holder</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label for="cifId2">CIF ID*</label>
+                    <input type="text" id="cifId2" value="000729580">
+                </div>
+                <div class="field-group">
+                    <label for="name2">Name*</label>
+                    <input type="text" id="name2" value="FERDOSHI">
+                </div>
+                <div class="field-group">
+                    <label for="addressLine2">Address Line 1*</label>
+                    <input type="text" id="addressLine2" value="C 477, SHAHID INDRA JYOTI NAGAR">
+                </div>
+                <div class="field-group">
+                    <label for="city2">City</label>
+                    <input type="text" id="city2" value="JAIPU">
+                </div>
+                <div class="field-group">
+                    <label for="country2">Country</label>
+                    <input type="text" id="country2" value="IN">
+                </div>
+            </div>
+            <div class="column">
+                <h3>Relationship Code Details</h3>
+                <div class="field-group">
+                    <label for="relationshipCode1">Relationship Code</label>
+                    <input type="text" id="relationshipCode1">
+                </div>
+                <div class="field-group">
+                    <label for="title1">Title*</label>
+                    <input type="text" id="title1" value="MR">
+                </div>
+                <div class="field-group">
+                    <label for="state1">State</label>
+                    <input type="text" id="state1" value="RAJAS">
+                </div>
+                <div class="field-group">
+                    <label for="postalCode1">Postal Code</label>
+                    <input type="text" id="postalCode1" value="302016">
+                </div>
+                <div class="field-group">
+                    <label for="del1">Del</label>
+                    <input type="checkbox" id="del1">
+                </div>
+            </div>
+        </div>
+
+       <h3>Nomination Details</h3>
+        <div class="form-section">
+            <div class="column">
+                <label for="nomination">Nomination*</label>
+                <select id="nomination">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <div class="field-group">
+                    <label for="name20">Name*</label>
+                    <input type="text" id="name20">
+                </div>
+
+                <label for="nomineeCifId">CIF ID</label>
+                <input type="text" id="nomineeCifId">
+
+                <label for="nomineeCity">City*</label>
+                <input type="text" id="nomineeCity" value="J0036">
+
+                <label for="nomineeCountry">Country*</label>
+                <input type="text" id="nomineeCountry" value="IN">
+
+                <label for="nomineePostalCode">Postal Code*</label>
+                <input type="text" id="nomineePostalCode" value="302016">
+
+                <label for="nomineeMinor">Nominee Minor*</label>
+                <div class="radio-group">
+                    <input type="radio" id="minorYes" name="nomineeMinor" value="Yes">
+                    <label for="minorYes">Yes</label>
+                    <input type="radio" id="minorNo" name="nomineeMinor" value="No">
+                    <label for="minorNo">No</label>
+                </div>
+                <label for="aadhaarNo">Aadhaar No.</label>
+                <input type="text" id="aadhaarNo">
+            </div>
+
+            <div class="column">
+                <label for="NominationRegNo">Nomination Registration No.*</label>
+                <input type="text" id="NominationRegNo" value="10078ABQWWY">
+
+                <label for="relationship">Relationship*</label>
+                <input type="text" id="relationship" value="599">
+
+                <label for="address">Address*</label>
+                <input type="text" id="address" value="P A SNR HO, JAIPUR 16">
+
+                <label for="state">State*</label>
+                <input type="text" id="state" value="RAJ">
+
+                <label for="nomineePct">Nominee Pct.*</label>
+                <input type="text" id="nomineePct" value="100.000000">
+
+                <div class="field-group">
+                    <label for="del1">Del</label>
+                    <input type="checkbox" id="del1">
+                </div>
+
+                <label for="dateOfBirth">Birth Date*</label>
+                <input type="date" id="dateOfBirth">
+
+                <label for="natureOfEntitlement">Nature of Entitlement*</label>
+                <select id="natureOfEntitlement">
+                    <option value="Select">Select</option>
+                    <option value="Option1">Option 1</option>
+                </select>
+            </div>
+        </div>
+
+        <h3>Guardian Details</h3>
+        <div class="form-section">
+            <div class="column">
+                <label for="guardianName">Guardian Name</label>
+                <input type="text" id="guardianName">
+
+                <label for="guardianCode">Guardian Code</label>
+                <select id="guardianCode">
+                    <option value="Select">Select</option>
+                </select>
+
+                <label for="guardianCity">City</label>
+                <input type="text" id="guardianCity">
+
+                <label for="guardianState">State</label>
+                <input type="text" id="guardianState">
+            </div>
+
+            <div class="column">
+                <label for="guardianCountry">Country</label>
+                <input type="text" id="guardianCountry">
+
+                <label for="guardianAddress">Address</label>
+                <input type="text" id="guardianAddress">
+
+                <label for="guardianPostalCode">Postal Code</label>
+                <input type="text" id="guardianPostalCode">
+            </div>
+        </div>
+        <div id="successMessage" style="display: none; color: green; font-weight: bold; margin-top: 20px;">
+            Form submitted successfully!
+        </div>
+
+        <!-- Submit button -->
+        <div style="text-align: center; margin-top: 20px;">
+            <button id="submitButton" onclick="validateForm()">Submit</button>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            // Select all labels and filter those containing a *
+            const labels = document.querySelectorAll('label');
+            let allFilled = true;
+
+            labels.forEach(label => {
+                if (label.textContent.includes('*')) {
+                    const inputId = label.getAttribute('for');
+                    const inputElement = document.getElementById(inputId);
+
+                    if (inputElement) {
+                        if (
+                            (inputElement.tagName === 'INPUT' && !inputElement.value.trim()) || // Check empty input fields
+                            (inputElement.tagName === 'SELECT' && inputElement.value === 'Select') // Check dropdowns
+                        ) {
+                            allFilled = false;
+                            inputElement.style.border = '2px solid red'; // Highlight empty fields
+                        } else {
+                            inputElement.style.border = ''; // Reset the border if filled
+                        }
+                    }
+                }
+            });
+
+            if (allFilled) {
+                alert('Form Submitted Successfully.');
+                // document.getElementById('successMessage').style.display = 'block';
+            } else {
+                alert('Please fill all required fields marked with *.');
+                document.getElementById('successMessage').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
