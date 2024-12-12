@@ -604,6 +604,17 @@
                         }
                     }
                 }
+                if (label.textContent.includes('*') && label.nextElementSibling && label.nextElementSibling.tagName === 'DIV') {
+                    const radioGroup = label.nextElementSibling.querySelectorAll('input[type="radio"]');
+                    const isSelected = Array.from(radioGroup).some(radio => radio.checked);
+
+                    if (!isSelected) {
+                        allFilled = false;
+                        label.nextElementSibling.style.border = '2px solid red'; // Highlight radio group
+                    } else {
+                        label.nextElementSibling.style.border = ''; // Reset the border if a radio is selected
+                    }
+                }
             });
 
             if (allFilled) {
